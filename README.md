@@ -50,11 +50,11 @@ The VIEW is being executed through Postman (https://www.postman.com), as this is
 The CONTROLLER is located in 'CONTROLLER.php', which will in turn be the fist line to absorb the user input and communicate it through out the rest of the program. As the API has no front-end, it is a rather simple application.
 
 ## Observations
-You may find that the 'Age' Column in the SQL script is set to 'VARCHAR' instead of 'INT'. This was made to avoid an error in JSON in which it does not compute well with a NULL default value, which is what the coaslence operator is set to in the 'CRUD.php'. Attempt to diverge from this solution resulted in a cascade of error which I was not able to solve at the moment. I fully intend to do so in future versions or projects.
+You may find that the 'Age' Column in the SQL script is set to 'VARCHAR' instead of 'INT'. This was made to avoid an error in JSON in which it does not compute well with a NULL default value, which is what the coaslence operator is set to in the 'CRUD.php'. Attempt to diverge from this solution resulted in a cascade of errors which I was not able to solve at the time. I fully intend to do so in future versions or projects.
 
 I´ve made some changes regarding the functions in the 'CRUD.php' file (JSON_PRETTY_PRINT,fetch_array(MYSQLI_ASSOC) instead of fetch_assoc(),et cetera) and the arguments in the functions of the 'CONTROLLER.php' file. I´ve also used execute_query() instead of the usual "prepare(),bind_param() and execute()" combination used to sanitize input. I´ve done so out of a I desire to make it clear that this not done through the use of copy paste (as of today 07/19/2025, as far as I´m aware, chatGPT has not incorporated this function in its repertory) and that this is a project that is fruit of my own labor, apart from the references that I have used in my learning process. That being said, I´m fully aware that this new function is not yet considered best practice when it comes to input sanitation.
 
-I´ve also added a new PATCH function to accommodate the request, as sometimes it is simpler than a full UPDATE. 
+I have also added a new PATCH function to accommodate the request, as sometimes it is simpler than a full UPDATE. 
 
 ## Considerations
 This API was inspired and partially created following the instructions found in the repository of the php API created by BradTraversy (traversymedia) in the repository available below:
