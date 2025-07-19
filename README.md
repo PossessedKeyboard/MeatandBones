@@ -2,12 +2,12 @@
 This is a more develop version of the Barebones API, with parameter binding to prevent SQL injections and PATCH request option built in.
 
 ## Table of Contents
-[Objectives](#objectives)
-[Installation](#installation)
-[Instructions](#instructions)
-[Software Architecture](#software-architecture)
-[Observations](#observations)
-[Considerations](#considerations)
+- [Objectives](#objectives)
+- [Installation](#installation)
+- [Instructions](#instructions)
+- [Software Architecture](#software-architecture)
+- [Observations](#observations)
+- [Considerations](#considerations)
 
 ## Objectives
 To be able to create a more robust version of the 'Barebones' with the proper sanitation measures to avoid SQL injections, mainly parameter binding. 
